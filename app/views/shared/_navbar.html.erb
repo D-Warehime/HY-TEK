@@ -1,21 +1,39 @@
 <div class="navbar-hytek">
+
   <div class="navbar-hytek-logo">
     <%= link_to root_path do %>
-      <%= image_tag("hy-tek-current-logo.jpeg") %>
+      <%= image_tag("hytekbio-white-logo.png") %>
     <% end %>
   </div>
 
   <div class="navbar-links">
   <ul id="navbar-links">
-    <li>Technologies</li>
-    <li>Updates</li>
-    <li>About</li>
-    <li>Contact</li>
+    <li>
+      <%= link_to "Technologies", technologies_path, class: "navbar-link-items" %>
+    </li>
+    <li>
+      <%= link_to "Updates", updates_path, class: "navbar-link-items" %>
 
+    </li>
+    <li>
+      <%= link_to "About", about_path, class: "navbar-link-items" %>
+
+    </li>
+    <li>
+      <%= link_to "Contact", contact_path, class: "navbar-link-items" %>
+
+    </li>
   </ul>
   </div>
 
-
-
-
 </div>
+
+<script>
+  var url = window.location.pathname;
+  var navbarOptions = document.querySelectorAll("a.navbar-link-items");
+  navbarOptions.forEach(function(element) {
+    if (url == (element.pathname)) {
+          element.classList.add("active");
+      }
+    });
+</script>
