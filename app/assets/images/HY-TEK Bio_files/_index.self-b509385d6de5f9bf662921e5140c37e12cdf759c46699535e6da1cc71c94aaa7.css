@@ -1,0 +1,17 @@
+/* line 1, /home/daniel/code/D-Warehime/HY-TEK/app/assets/stylesheets/components/_navbar.scss */
+.navbar-hytek {
+  height: 70px;
+  background: #88BB92;
+  padding: 0px 10px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+/* line 12, /home/daniel/code/D-Warehime/HY-TEK/app/assets/stylesheets/components/_navbar.scss */
+.navbar-hytek-logo img {
+  position: center;
+  left: 0;
+}

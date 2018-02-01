@@ -1,0 +1,36 @@
+.navbar-hytek {
+  height: 70px;
+  background: #88BB92;
+  padding: 0px 5px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+.navbar-hytek-logo img {
+  position: center;
+  left: 0;
+}
+
+ul#navbar-links li{
+  display: inline;
+  padding: 0px 5px;
+  color: white;
+  font-size: 20px;
+  transition: color 0.3s ease;
+  &:hover {
+    color: #94DDBC;
+    text-decoration: none;
+  }
+  &:active {
+    text-decoration: none;
+  }
+  &:focus {
+    text-decoration: none;
+    outline: none;
+    color: white;
+  }
+}
