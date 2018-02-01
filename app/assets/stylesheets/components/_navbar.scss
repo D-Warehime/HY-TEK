@@ -13,24 +13,32 @@
 .navbar-hytek-logo img {
   position: center;
   left: 0;
+  height: 50px;
 }
 
 ul#navbar-links li{
   display: inline;
-  padding: 0px 5px;
+  padding: 0px 10px;
+}
+
+.navbar-link-items {
   color: white;
-  font-size: 20px;
+  font-size: 22px;
   transition: color 0.3s ease;
+  text-decoration: none;
+  margin-right: 5px;
   &:hover {
-    color: #94DDBC;
-    text-decoration: none;
-  }
-  &:active {
+    color:  #3D6C39;
     text-decoration: none;
   }
   &:focus {
     text-decoration: none;
     outline: none;
-    color: white;
+    color:  #3D6C39;
   }
+}
+
+.navbar-link-items.active {
+  color:  #3D6C39;
+  border-bottom: 2px solid #3D6C39;
 }
